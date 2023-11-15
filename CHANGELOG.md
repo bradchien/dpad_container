@@ -1,3 +1,7 @@
+## [2.0.5] - 20/06/2023
+
+- Should notify unfocused automatically
+
 ## [2.0.4] - 20/06/2023
 
 - Fix double on click event

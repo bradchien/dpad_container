@@ -34,6 +34,11 @@ class DpadContainer extends HookWidget {
 
     /// On focus state
     var isFocused = useState(false);
+    focusNode.addListener(() {
+      if(!focusNode.hasFocus) {
+        onFocus(isFocused.value = false);
+      }
+    });
 
     return RawKeyboardListener(
       focusNode: focusNode,
